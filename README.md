@@ -76,6 +76,7 @@ If you want to contribute or run the tool locally during development:
 
    ```bash
    git clone https://github.com/Mrinal098/cron-time-formatter.git
+   cd cron-time-formatter
    ```
 
 2. Install dependencies:

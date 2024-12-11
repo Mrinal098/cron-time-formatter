@@ -18,7 +18,8 @@
   "description": "A Node.js utility to parse and format cron expressions into a human-readable format. It validates the input and outputs the detailed breakdown of each field in the cron expression",
   "devDependencies": {
     "@types/node": "^22.10.1",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.8",
+    "typescript": "latest"
   },
   "bin": {
     "cron-time-formatter": "./dist/index.js"
