@@ -1,21 +1,26 @@
 {
   "name": "cron-time-formatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
     "format": "node ./dist/index.js",
     "test": "vitest"
   },
-  "author": "",
+  "author": "Mrinal Singh",
+  "repository": "https://github.com/Mrinal098/cron-time-formatter",
   "license": "ISC",
-  "keywords": [],
-  "description": "",
+  "keywords": [
+    "cron",
+    "cron parser",
+    "cron time formatter"
+  ],
+  "description": "A Node.js utility to parse and format cron expressions into a human-readable format. It validates the input and outputs the detailed breakdown of each field in the cron expression",
   "devDependencies": {
     "@types/node": "^22.10.1",
     "vitest": "^2.1.8"
   },
   "bin": {
-    "format-cron-time": "./dist/index.js"
+    "cron-time-formatter": "./dist/index.js"
   }
 }
