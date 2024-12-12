@@ -3,10 +3,16 @@
 import CronTimeFormatter from "./formatter";
 
 const commandArguments: string[] = process.argv.slice(2);
-const argArray = commandArguments[0].split(" ");
+const argArray = commandArguments[0]?.split(" ");
+
+if (!argArray) {
+  console.error("Please pass Cron expression");
+  process.exit();
+}
 
 if (argArray.length < 6) {
-  throw new Error('Cron expression is invalid')
+  console.error("Cron expression is invalid");
+  process.exit();
 }
 
 CronTimeFormatter.formatCronTime(argArray);
